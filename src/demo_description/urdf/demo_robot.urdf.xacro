@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<robot name="demo_robot" xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+    <xacro:arg name="use_ros2_control" default="true"/>
+    <xacro:arg name="sim_mode" default="false"/>
+
+    <xacro:include filename="demo_robot_skeleton.xacro"/>
+
+    <xacro:if value="$(arg use_ros2_control)">
+        <xacro:include filename="ros2_control.xacro"/>
+    </xacro:if>
+
+    <xacro:include filename="camera.xacro"/>
+    <xacro:include filename="imu.xacro"/>
+    <xacro:include filename="lidar.xacro"/> 
+
+
+</robot>

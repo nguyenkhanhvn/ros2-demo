@@ -1,0 +1,42 @@
+demo_controller:
+  left_wheel_name: {
+    type: string,
+    default_value: "",
+    description: "Link names of the left side wheels",
+  }
+  right_wheel_name: {
+    type: string,
+    default_value: "",
+    description: "Link names of the right side wheels",
+  }
+  command_interfaces: {
+    type: string_array,
+    default_value: [],
+    description: "command interfaces",
+  }
+  state_interfaces: {
+    type: string_array,
+    default_value: [],
+    description: "state interfaces",
+  }
+  test_nest:
+    test_bool: {
+      type: bool,
+      default_value: false,
+      description: "test_bool",
+    }
+    test_int: {
+      type: int,
+      default_value: 0,
+      description: "test_int",
+    }
+    test_double: {
+      type: double,
+      default_value: .NAN,
+      description: "test_double",
+    }
+    test_double_array: {
+      type: double_array,
+      default_value: [0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+      description: "double_array: ``[0.0, 0.0, 0.0, 0.0, 0.0, 0.0]``.",
+    }

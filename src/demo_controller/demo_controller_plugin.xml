@@ -1,0 +1,8 @@
+<library path="demo_controller">
+  <class name="demo_controller/DemoController" type="demo_controller::DemoController" base_class_type="controller_interface::ControllerInterface">
+  <description>
+    Demo controller for demo robot.
+  </description>
+  </class>
+</library>
+  
